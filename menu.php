@@ -6,6 +6,5 @@ Nos produits <br /><br />
 <a href="films.php">Films</a> <br /><br />
 <a href="series.php">Séries</a> <br /><br />
 <a href="documentaire.php">Documentaires</a><br /><br />
-<a href="liste.php">Ma liste</a> <br /><br /><br />
 <a href="contact.php">Contact</a>
 </menu>';

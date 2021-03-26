@@ -8,7 +8,6 @@ echo '
           <li><a href="films.php">Films</a></li>
           <li><a href="series.php">Séries</a></li>
           <li><a href="documentaire.php">Documentaires</a></li>
-          <li><a href="liste.php">Ma liste</a></li>
           <li>
             <input type="search" id="barsearch" placeholder="Recherche" />
           </li>
