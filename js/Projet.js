@@ -2,45 +2,51 @@ var binaire = 0;
 
 function afficheStock() {
   colonne = document.getElementsByClassName("stock");
-  bouton = document.getElementsByClassName("b-stock");
+  bouton = document.getElementById("bStock");
 
   binaire = 1 - binaire;
   if (binaire == 1) {
     for (var i = 0; i < colonne.length; i++) {
       colonne[i].style.display = "contents";
-      bouton[i].innerHTML = "Cacher le stock";
+      bouton.innerHTML = "Cacher le stock";
     }
   } else {
     for (var i = 0; i < colonne.length; i++) {
       colonne[i].style.display = "none";
-      bouton[i].innerHTML = "Afficher le stock";
+      bouton.innerHTML = "Afficher le stock";
     }
   }
 }
-
-function resetQuantite(a) {
+function resetQuantite(a, max) {
   quantite = document.getElementById("stock" + a).value;
-  max = parseInt(document.getElementById("countStock" + a).innerHTML, 10);
-  if (quantite > max || quantite < 0) {
+  if (quantite > max || quantite < 1) {
     document.getElementById("stock" + a).value = 0;
+    document.getElementById("b-" + a).disabled = true;
+    document.getElementById("b+" + a).disabled = false;
+  } else if (quantite == max) {
+    document.getElementById("b-" + a).disabled = false;
+    document.getElementById("b+" + a).disabled = true;
+  } else {
+    document.getElementById("b-" + a).disabled = false;
+    document.getElementById("b+" + a).disabled = false;
   }
-  document.getElementById("b-" + a).disabled = true;
-  document.getElementById("b+" + a).disabled = false;
 }
 
-function setMax(a) {
-  max = parseInt(document.getElementById("countStock" + a).innerHTML, 10);
+function setMax(a, max) {
   document.getElementById("stock" + a).setAttribute("max", max);
-  quantite = document.getElementById("stock" + a).value;
 }
 
-function plus(a) {
+function plus(a, max) {
+  document.getElementById("b-" + a).disabled = false;
   count = document.getElementById("stock" + a).value;
-  count = parseInt(count, 10);
-  count++;
-  document.getElementById("stock" + a).value = count;
-
-  max = parseInt(document.getElementById("countStock" + a).innerHTML, 10);
+  if (count < max) {
+    count = parseInt(count, 10);
+    count++;
+    document.getElementById("stock" + a).value = count;
+    if (count == max) {
+      document.getElementById("b+" + a).disabled = true;
+    }
+  }
 }
 
 function moins(a) {
@@ -56,21 +62,6 @@ function moins(a) {
   document.getElementById("b+" + a).disabled = false;
 }
 
-function bouton(a) {
-  quantite = document.getElementById("stock" + a).value;
-  max = parseInt(document.getElementById("countStock" + a).innerHTML, 10);
-  if (quantite == 0) {
-    document.getElementById("b-" + a).disabled = true;
-  } else {
-    document.getElementById("b-" + a).disabled = false;
-  }
-  if (quantite == max) {
-    document.getElementById("b+" + a).disabled = true;
-  } else {
-    document.getElementById("b+" + a).disabled = false;
-  }
-}
-
 function commande() {
   divCommande = document.getElementsByClassName("commande");
 
@@ -78,29 +69,23 @@ function commande() {
     divCommande[i].innerHTML =
       '<button>Acheter</button><br /><br /><button id="b-' +
       i +
-      '" disabled onclick="bouton(' +
+      '" disabled class="bSuite"  onclick="moins(' +
       i +
-      ");moins(" +
+      ')">-</button><input onclick="setMax(' +
       i +
-      ')">-</button> <input onclick=setMax(' +
+      ",5);resetQuantite(" +
       i +
-      ") onfocusout=resetQuantite(" +
+      ',5)" onfocusout="resetQuantite(' +
       i +
-      ") onchange=bouton(" +
+      ',5)" class="nbStock"id="stock' +
       i +
-      ') class="nbStock" id="stock' +
+      '" min="0" type="number" value="0"/><button id="b+' +
       i +
-      '" min="0" type="number" value="0"/> <button id="b+' +
+      '" class="bSuite" onclick="plus(' +
       i +
-      '"" onclick="plus(' +
+      ',5)">+</button><br /><div style="display: none" class="stock">Stock :<span id="countStock' +
       i +
-      ");bouton(" +
-      i +
-      ')">+</button><br /><div style="display: none" class="stock">Stock : <span id="countStock' +
-      i +
-      '">' +
-      (i + 2) +
-      '</span></div><br /><button class="b-stock" onclick="afficheStock()">Afficher le stock</button>';
+      '">5</span></div>';
   }
 }
 function cache(verifid, resumeid) {

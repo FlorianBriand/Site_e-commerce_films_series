@@ -28,6 +28,40 @@ menu {
   border-radius: 0px 40px 40px 0px;
 }
 
+button {
+  display: inline-block;
+  font-size: large;
+  padding: 12px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: #ccc;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #4eb5f1;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.bSuite {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 100px;
+}
+
+button:hover {
+  background-color: #4095c6;
+}
+
+button:disabled {
+  background: rgb(219, 201, 201);
+}
+
 #accueil {
   background-image: url("../img/pied.jpg");
   background-repeat: no-repeat;
@@ -43,19 +77,25 @@ menu {
   justify-content: center;
 }
 
+#bStock {
+  position: absolute;
+  bottom: 200px;
+  right: 50px;
+}
+
 article {
   width: 450px;
   height: 300px;
   margin: 15px;
   background-color: rgb(10, 152, 199);
-  transition: transform 0.5s;
+
   padding: 25px;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: block;
 }
 
-article:hover {
+img:hover {
   transform: scale(1.06);
 }
 
@@ -106,6 +146,7 @@ article:hover {
   margin-top: 25px;
   float: left;
   border-radius: 10px;
+  transition: transform 0.5s;
 }
 .descrip {
   float: left;
@@ -202,14 +243,6 @@ textarea {
   vertical-align: top;
 
   height: 5em;
-}
-
-.button {
-  padding-left: 90px;
-}
-
-button {
-  margin-left: 0.5em;
 }
 
 .nbStock {
