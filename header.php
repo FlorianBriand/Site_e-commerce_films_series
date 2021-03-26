@@ -4,11 +4,11 @@ echo '
       <nav>
         <img id="logo" src="img/logo.jpg" alt="" />
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="films.html">Films</a></li>
-          <li><a href="series.html">Séries</a></li>
-          <li><a href="documentaire.html">Documentaires</a></li>
-          <li><a href="liste.html">Ma liste</a></li>
+          <li><a href="index.php">Accueil</a></li>
+          <li><a href="films.php">Films</a></li>
+          <li><a href="series.php">Séries</a></li>
+          <li><a href="documentaire.php">Documentaires</a></li>
+          <li><a href="liste.php">Ma liste</a></li>
           <li>
             <input type="search" id="barsearch" placeholder="Recherche" />
           </li>
