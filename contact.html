@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fichier.css">
+    <script type="text/javascript" src="js/Projet.js"> </script>
+    <title>Netchill</title>
+</head>
+<body>
+
+    <header>
+    <nav>
+        <img id="logo" src="img/logo.jpg" alt="">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="documentaire.html">Documentaires</a></li>
+            <li><a href="liste.html">Ma liste</a></li>
+            <li><input type="search" id="barsearch" placeholder="Recherche"></li>
+            <li><a href="#">S'identifier</a></li>
+        </ul>
+
+    </nav>
+    </header>
+   
+        <menu>
+            Menu : <br><br>
+            <a href="index.html">Accueil</a> <br><br>
+            Nos produits <br><br>
+            <a href="films.html">Films</a> <br><br>
+            <a href="series.html">Séries</a> <br><br>
+            <a href="documentaire.html">Documentaires</a><br><br>
+            <a href="liste.html">Ma liste</a> <br><br><br>
+            <a href="contact.html">Contact</a>
+        </menu>
+     <section>
+    <form name="myForm"> 
+        <lengend>Mes champs texte</legend>
+        <div>
+            <label for="Datecontact">Date du contact :</label>
+            <input type="date" id="date1" placeholder="Entrez la date du contact"/>
+        </div>
+        <span class="error" id="erreurdate1"></span><br/>
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text"  id="nom" placeholder="Entrez votre nom"/>
+        </div>
+        <span class="error" id="erreurnom"></span><br/>
+        <div>
+            <label for="prenom">Prénom :</label> 
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"/>
+        </div>
+        <span class="error" id="erreurprenom"></span><br/>
+        <div>
+            <label for="mail">Mail :</label>
+            <input type="text" id="mail" id="courriel" placeholder="Entrez votre mail"/>
+        </div>
+        <span class="error" id="erreurmail"></span><br/>
+        <div>
+            <label for="datenaissance">Date de naissance :</label> 
+            <input type="date" id="date2" placeholder="Entrez votre date de naissance"/>
+        </div>
+        <span class="error" id="erreurdate2"></span><br/>
+        <div>
+            <label for="sujet">Sujet :</label> 
+            <input type="text" placeholder="Entrez le sujet de votre mail"/>
+        </div>
+        <div>
+            <label for="sujet">Contenu :</label> 
+            <textarea>Tapez ici votre mail</textarea>
+        </div>
+        <div>
+            <input type="button" value="Envoi des données" onclick="valider()"/>
+        </div>
+    </form>
+    </section>
+    <footer>Copyright Société Netchill<br>Raphael Coutinho et Florian Briand<br>Contact us :<br>netchill@gmail.com<br>06.01.23.45.67</footer>
+</body>
+</html>
