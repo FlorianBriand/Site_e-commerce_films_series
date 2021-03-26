@@ -16,7 +16,6 @@
 
    <section id="accueil">
 
-
       <div id="slogan">
          <div id="slogan1">
             Netchill un jour,<br />

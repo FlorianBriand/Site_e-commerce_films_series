@@ -12,7 +12,6 @@
 <body onload="commande()">
    <?php
    include "header.php";
-
    include "menu.php";
    ?>
    <section>
