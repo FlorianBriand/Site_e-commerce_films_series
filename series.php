@@ -12,6 +12,7 @@
 <body onload="commande()">
   <?php
   include "header.php";
+  include "menu.php";
   ?>
   <section>
     <section id="partieArticle">
@@ -119,6 +120,9 @@
       <button id="bStock" onclick="afficheStock()">Afficher le stock</button>
     </section>
   </section>
+  <?php
+  include "footer.php";
+  ?>
 </body>
 
 </html>

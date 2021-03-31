@@ -4,18 +4,38 @@ body {
   padding: 0;
   background-color: rgb(145, 207, 231);
   font-family: Noto Sans, sans-serif;
+  min-width: 1070px;
+}
+#barreHaut {
+  height: 58px;
+  border-radius: 2000px;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgb(10, 152, 199);
+  border: 2px solid;
+  border-color: white;
+  min-width: 1070px;
 }
 
-#logo {
-  max-height: 50px;
+.lienBarre {
   float: left;
-  margin-left: 20px;
-}
-header {
-  height: 70px;
-  padding: 5px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
   padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 1;
+  height: 18px;
+  text-transform: uppercase;
 }
+
+header {
+  padding: 20px;
+}
+
 menu {
   background-color: whitesmoke;
   padding: 25px;
@@ -78,7 +98,7 @@ button:disabled {
 }
 
 #bStock {
-  position: absolute;
+  position: fixed;
   bottom: 200px;
   right: 50px;
 }
@@ -146,7 +166,6 @@ img:hover {
   margin-top: 25px;
   float: left;
   border-radius: 10px;
-  transition: transform 0.5s;
 }
 .descrip {
   float: left;
@@ -168,9 +187,7 @@ img:hover {
   border: 4mm ridge rgb(255, 0, 0);
   background-color: white;
 }
-#barsearch {
-  max-width: 200px;
-}
+
 ul {
   padding: 0;
   margin: 0;
