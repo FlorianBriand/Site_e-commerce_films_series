@@ -1,8 +1,3 @@
-<?php
-session_start();
-var_dump($_SESSION['categories']);
-?>
-
 <header>
   <nav>
 
@@ -12,17 +7,20 @@ var_dump($_SESSION['categories']);
       </div>
 
       <?php
-      var_dump($_SESSION['categories']['Film']);
+      for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
+
       ?>
-      <div class="lienBarre">
-        <a href="films.php">Films</a>
-      </div>
-      <div class="lienBarre">
-        <a href="series.php">Séries</a>
-      </div>
-      <div class="lienBarre">
-        <a href="documentaire.php">Documentaires</a>
-      </div>
+        <div class="lienBarre">
+          <a href="films.php">
+            <?php
+            echo $_SESSION['categories'][$i];
+            ?>
+          </a>
+        </div>
+      <?php
+      }
+      ?>
+
 
       <div class="lienBarre">
         <input type="search" id="barsearch" placeholder="Recherche" />

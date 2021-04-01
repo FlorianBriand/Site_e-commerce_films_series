@@ -1,5 +1,7 @@
 <?php
-$_SESSION['categories'] = array(
+$_SESSION['categories'] = array("Films", "Séries", "Documentaires");
+
+$_SESSION['produits'] = array(
     "Film" => array(
         "f01" => array(
             "img" => "",
