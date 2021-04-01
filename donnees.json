@@ -1,0 +1,37 @@
+{
+    "squadName": "Super hero squad",
+    "homeTown": "Metro City",
+    "formed": 2016,
+    "secretBase": "Super tower",
+    "active": true,
+    "categorie": [
+        {
+            "film": [
+                {
+                    "nom": "Venom",
+                    "synopsis": "Possédé par un symbiote qui agit de manière autonome, le journaliste Eddie Brock devient le protecteur létal Venom.",
+                    "genre": "Science Fiction, Action",
+                    "stock": 5
+                },
+                {
+                    "nom": "Spider-man : Far From Home",
+                    "synopsis": "L'araignée sympa du quartier décide de rejoindre ses meilleurs amis Ned, MJ, et le reste de la bande pour des vacances en Europe. Cependant, le projet de Peter de laisser son costume de super-héros derrière lui pendant quelques semaines est rapidemen compromis quand il accepte à contrecoeur d'aider Nick Fury à découvrir le mystère de plusieurs attaques de créatures, qui ravagent le continent !",
+                    "genre": "Action, Aventure",
+                    "stock": 5
+                },
+                {
+                    "nom": "Titanic",
+                    "synopsis": "Southampton, 10 avril 1912. Le paquebot le plus grand et le plus moderne du monde, réputé pour son insubmersibilité, le Titanic, appareille pour son premier voyage. Quatre jours plus tard, il heurte un iceberg. A son bord, un artiste pauvre et une grande bourgeoise tombent amoureux.",
+                    "genre": "Drame, Romance",
+                    "stock": 5
+                }
+            ]
+        },
+        {
+            "serie": []
+        },
+        {
+            "documentaire": []
+        }
+    ]
+}

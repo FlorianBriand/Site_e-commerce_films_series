@@ -10,6 +10,8 @@
 
 <body>
    <?php
+   session_start();
+   include "varSessions.php";
    include "header.php";
    include "menu.php";
    ?>

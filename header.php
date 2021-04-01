@@ -1,9 +1,6 @@
-
-<?php
-echo '
 <header>
   <nav>
-    
+
     <div id="barreHaut">
       <div class="lienBarre">
         <a href="index.php">Accueil</a>
@@ -22,7 +19,6 @@ echo '
       </div>
       <div class="lienBarre">
         <a href="#">S\'identifier</a>
-      </div> 
+      </div>
   </nav>
 </header>
-';

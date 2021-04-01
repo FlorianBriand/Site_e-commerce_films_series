@@ -11,9 +11,17 @@
 
 <body onload="commande()">
    <?php
+   session_start();
+   // indiqué le chemin de votre fichier JSON, il peut s'agir d'une URL
+   $json = file_get_contents("donnees.json");
+
+   var_dump(json_decode($json));
+   ?>
+   <?php
    include "header.php";
    include "menu.php";
    ?>
+
    <section>
       <section id="partieArticle">
          <article>
