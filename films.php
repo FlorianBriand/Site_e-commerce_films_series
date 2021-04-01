@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +15,7 @@
 
 <body onload="commande()">
    <?php
-   session_start();
+
    // indiqué le chemin de votre fichier JSON, il peut s'agir d'une URL
    $json = file_get_contents("donnees.json");
 

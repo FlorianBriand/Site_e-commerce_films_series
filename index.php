@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +14,7 @@
 
 <body>
    <?php
-   session_start();
-   include "varSessions.php";
+   include "varSession.inc.php";
    include "header.php";
    include "menu.php";
    ?>
