@@ -9,7 +9,7 @@ $_SESSION['produits'] = array(
             "synopsis" => "Possédé par un symbiote qui agit de manière autonome, le journaliste Eddie Brock devient le protecteur létal Venom.",
             "genre" => "Science Fiction, Action",
             "prix" => 10,
-            "stock" => 6,
+            "stock" => 8,
         ),
         array(
             "img" => "img/farfromhome.jpg",
@@ -35,7 +35,7 @@ $_SESSION['produits'] = array(
             bourgeoise tombent amoureux.",
             "genre" => "Drame, Romance",
             "prix" => 10,
-            "stock" => 6,
+            "stock" => 8,
         ),
         array(
             "img" => "img/ultron.jpg",
@@ -49,7 +49,7 @@ $_SESSION['produits'] = array(
             humaine.",
             "genre" => "Action, Aventure, Science Fiction",
             "prix" => 10,
-            "stock" => 6,
+            "stock" => 0,
         ),
         array(
             "img" => "img/infinitywar.jpg",
@@ -59,7 +59,7 @@ $_SESSION['produits'] = array(
             ne conduise à la destruction complète de l’univers.",
             "genre" => "Action, Aventure, Fantastique",
             "prix" => 10,
-            "stock" => 6,
+            "stock" => 1,
         ),
 
     ),
@@ -75,7 +75,7 @@ $_SESSION['produits'] = array(
             évasion...",
             "genre" => "Drame, Thriller",
             "prix" => 10,
-            "stock" => 6,
+            "stock" => 5,
         ),
         array(
             "img" => "img/peaky.jpg",

@@ -15,11 +15,6 @@ session_start();
 
 <body>
    <?php
-   // indiqué le chemin de votre fichier JSON, il peut s'agir d'une URL
-   $json = file_get_contents("donnees.json");
-
-   var_dump(json_decode($json));
-
    $tab = $_SESSION['produits'][$_GET['cat']];
 
    include "header.php";
@@ -65,6 +60,11 @@ session_start();
          </article>
       <?php
       }
+
+      $json = file_get_contents("donnees.json");
+
+      var_dump(json_decode($json));
+
       ?>
       <button id="bStock" onclick="afficheStock()">Afficher le stock</button>
    </section>
