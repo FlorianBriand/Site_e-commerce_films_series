@@ -25,54 +25,50 @@ session_start();
    include "header.php";
    include "menu.php";
    ?>
+   <section id="partieArticle">
 
-   <section>
-      <section id="partieArticle">
+      <?php
+      for ($i = 0; $i < sizeof($tab); $i++) {
+      ?>
+         <article>
+            <img class="imgArticle" src=<?php echo $tab[$i]['img']; ?> alt="" />
+            <div class="descrip">
+               <p class="titre"><?php echo $tab[$i]['nom']; ?></p>
+               <p class="intro">
+                  Synopsis :
+                  <input id="verif<?php echo $i ?>f" class="input" type="checkbox" onclick="cache('verif<?php echo $i ?>f', 'rf<?php echo $i ?>')" />
+               </p>
+               <p class="synopsis" id="rf<?php echo $i ?>">
+                  <?php echo $tab[$i]['synopsis']; ?>
+               </p>
+               <p class="intro">
+                  Genre : <a class="genre"><?php echo $tab[$i]['genre']; ?></a>
+               </p>
 
-         <?php
-         for ($i = 0; $i < sizeof($tab); $i++) {
-         ?>
-            <article>
-               <img class="imgArticle" src=<?php echo $tab[$i]['img']; ?> alt="" />
-               <div class="descrip">
-                  <p class="titre"><?php echo $tab[$i]['nom']; ?></p>
-                  <p class="intro">
-                     Synopsis :
-                     <input id="verif<?php echo $i ?>f" class="input" type="checkbox" onclick="cache('verif<?php echo $i ?>f', 'rf<?php echo $i ?>')" />
-                  </p>
-                  <p class="synopsis" id="rf<?php echo $i ?>">
-                     <?php echo $tab[$i]['synopsis']; ?>
-                  </p>
-                  <p class="intro">
-                     Genre : <a class="genre"><?php echo $tab[$i]['genre']; ?></a>
-                  </p>
+               <button>Acheter</button><br /><br />
 
-                  <button>Acheter</button><br /><br />
+               <button id="b-<?php echo $i ?>" disabled class="bSuite" onclick="moins(<?php echo $i ?>)">
+                  -
+               </button>
+               <input onclick="setMax(<?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>);resetQuantite( <?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>)" onfocusout="resetQuantite(<?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>)" class="nbStock" id="stock<?php echo $i ?>" min="0" type="number" value="0" />
 
-                  <button id="b-<?php echo $i ?>" disabled class="bSuite" onclick="moins(<?php echo $i ?>)">
-                     -
-                  </button>
-                  <input onclick="setMax(<?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>);resetQuantite( <?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>)" onfocusout="resetQuantite(<?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>)" class="nbStock" id="stock<?php echo $i ?>" min="0" type="number" value="0" />
-
-                  <button id="b+<?php echo $i ?>" class="bSuite" onclick="plus(<?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>)">
-                     +
-                  </button><br />
-                  <div style="display: none" class="stock">Stock :
-                     <span id="countStock<?php echo $i ?>">
-                        <?php echo $tab[$i]['stock'] ?>
-                     </span>
-                  </div>
+               <button id="b+<?php echo $i ?>" class="bSuite" onclick="plus(<?php echo $i ?>,<?php echo $tab[$i]['stock'] ?>)">
+                  +
+               </button><br />
+               <div style="display: none" class="stock">Stock :
+                  <span id="countStock<?php echo $i ?>">
+                     <?php echo $tab[$i]['stock'] ?>
+                  </span>
                </div>
+            </div>
 
-            </article>
-
-
-         <?php
-         }
-         ?>
-         <button id="bStock" onclick="afficheStock()">Afficher le stock</button>
-      </section>
+         </article>
+      <?php
+      }
+      ?>
+      <button id="bStock" onclick="afficheStock()">Afficher le stock</button>
    </section>
+
    <?php
    include "footer.php";
    ?>
