@@ -5,16 +5,13 @@
     <?php
     for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
 
+        echo '<a href="films.php?cat=' . $_SESSION['categories'][$i] . '">';
+
+        echo $_SESSION['categories'][$i];
     ?>
-        <a href="films.php">
-            <?php
-            echo $_SESSION['categories'][$i];
-            ?>
         </a> <br /><br />
     <?php
     }
     ?>
-
-
     <a href="contact.php">Contact</a>
 </menu>

@@ -11,10 +11,12 @@
 
       ?>
         <div class="lienBarre">
-          <a href="films.php">
-            <?php
-            echo $_SESSION['categories'][$i];
-            ?>
+          <?php
+
+          echo '<a href="films.php?cat=' . $_SESSION['categories'][$i] . '">';
+
+          echo $_SESSION['categories'][$i];
+          ?>
           </a>
         </div>
       <?php

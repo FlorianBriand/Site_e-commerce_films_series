@@ -63,30 +63,7 @@ function moins(a) {
 }
 
 function commande() {
-  divCommande = document.getElementsByClassName("commande");
-
-  for (var i = 0; i < divCommande.length; i++) {
-    divCommande[i].innerHTML =
-      '<button>Acheter</button><br /><br /><button id="b-' +
-      i +
-      '" disabled class="bSuite"  onclick="moins(' +
-      i +
-      ')">-</button><input onclick="setMax(' +
-      i +
-      ",5);resetQuantite(" +
-      i +
-      ',5)" onfocusout="resetQuantite(' +
-      i +
-      ',5)" class="nbStock"id="stock' +
-      i +
-      '" min="0" type="number" value="0"/><button id="b+' +
-      i +
-      '" class="bSuite" onclick="plus(' +
-      i +
-      ',5)">+</button><br /><div style="display: none" class="stock">Stock :<span id="countStock' +
-      i +
-      '">5</span></div>';
-  }
+  alert("Je me lance (commande)");
 }
 function cache(verifid, resumeid) {
   if (document.getElementById(verifid).checked) {
