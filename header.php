@@ -28,7 +28,7 @@
       <?php
 
 
-      if (isset($_SESSION['identifiant'])) {
+      if (isset($_SESSION['id'])) {
       ?>
         <div class="lienBarre">
           <?php
@@ -42,7 +42,7 @@
       ?>
         <div class="lienBarre">
           <?php
-          echo '<a href="">';
+          echo '<a href="connexion.php">';
           echo "Se connecter";
           ?>
           </a>
