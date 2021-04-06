@@ -3,7 +3,7 @@
     {
       "img": "img/venom.jpg",
       "nom": "Venom",
-      "synopsis": "Poss\u00e9d\u00e9 par un symbiote qui agit de mani\u00e8re autonome, le journaliste Eddie Brock devient le protecteur l\u00e9tal Venom.",
+      "synopsis": "Possédé par un symbiote qui agit de manière autonome, le journaliste Eddie Brock devient le protecteur létal Venom.",
       "genre": "Science Fiction, Action",
       "prix": 10,
       "stock": 8
@@ -11,7 +11,7 @@
     {
       "img": "img/farfromhome.jpg",
       "nom": "Spider-man : Far From Home",
-      "synopsis": "L'araign\u00e9e sympa du quartier d\u00e9cide de rejoindre ses meilleurs\r\n amis Ned, MJ, et le reste de la bande pour des vacances en Europe.\r\n Cependant, le projet de Peter de laisser son costume de\r\n super-h\u00e9ros derri\u00e8re lui pendant quelques semaines est rapidement\r\n compromis quand il accepte \u00e0 contrecoeur d'aider Nick Fury \u00e0\r\n d\u00e9couvrir le myst\u00e8re de plusieurs attaques de cr\u00e9atures, qui\r\n ravagent le continent !",
+      "synopsis": "L'araignée sympa du quartier décide de rejoindre ses meilleurs\r\n amis Ned, MJ, et le reste de la bande pour des vacances en Europe.\r\n Cependant, le projet de Peter de laisser son costume de\r\n super-héros derrière lui pendant quelques semaines est rapidement\r\n compromis quand il accepte à contrecoeur d'aider Nick Fury à\r\n découvrir le mystère de plusieurs attaques de créatures, qui\r\n ravagent le continent !",
       "genre": "Action, Aventure",
       "prix": 10,
       "stock": 6
@@ -19,15 +19,15 @@
     {
       "img": "img/titanic.jpg",
       "nom": "Titanic",
-      "synopsis": "Southampton, 10 avril 1912. Le paquebot le plus grand et le plus\r\n moderne du monde, r\u00e9put\u00e9 pour son insubmersibilit\u00e9, le Titanic,\r\n appareille pour son premier voyage. Quatre jours plus tard, il\r\n heurte un iceberg. A son bord, un artiste pauvre et une grande\r\n bourgeoise tombent amoureux.",
+      "synopsis": "Southampton, 10 avril 1912. Le paquebot le plus grand et le plus\r\n moderne du monde, réputé pour son insubmersibilité, le Titanic,\r\n appareille pour son premier voyage. Quatre jours plus tard, il\r\n heurte un iceberg. A son bord, un artiste pauvre et une grande\r\n bourgeoise tombent amoureux.",
       "genre": "Drame, Romance",
       "prix": 10,
       "stock": 8
     },
     {
       "img": "img/ultron.jpg",
-      "nom": "Avengers : l'\u00e8re d'ultron",
-      "synopsis": "Alors que Tony Stark tente de relancer un programme de maintien de\r\n la paix jusque-l\u00e0 suspendu, les choses tournent mal et les\r\n super-h\u00e9ros Iron Man, Captain America, Thor, Hulk, Black Widow et\r\n Hawkeye vont devoir \u00e0 nouveau unir leurs forces pour combattre le\r\n plus puissant de leurs adversaires : le terrible Ultron, un \u00eatre\r\n technologique terrifiant qui s\u2019est jur\u00e9 d\u2019\u00e9radiquer l\u2019esp\u00e8ce\r\n humaine.",
+      "nom": "Avengers : l'ère d'ultron",
+      "synopsis": "Alors que Tony Stark tente de relancer un programme de maintien de\r\n la paix jusque-là suspendu, les choses tournent mal et les\r\n super-héros Iron Man, Captain America, Thor, Hulk, Black Widow et\r\n Hawkeye vont devoir à nouveau unir leurs forces pour combattre le\r\n plus puissant de leurs adversaires : le terrible Ultron, un \u00eatre\r\n technologique terrifiant qui s\u2019est juré d\u2019éradiquer l\u2019espèce\r\n humaine.",
       "genre": "Action, Aventure, Science Fiction",
       "prix": 10,
       "stock": 0
@@ -35,7 +35,7 @@
     {
       "img": "img/infinitywar.jpg",
       "nom": "Avengers : Infinity War",
-      "synopsis": "Les Avengers et leurs alli\u00e9s devront \u00eatre pr\u00eats \u00e0 tout sacrifier\r\n pour neutraliser le redoutable Thanos avant que son attaque \u00e9clair\r\n ne conduise \u00e0 la destruction compl\u00e8te de l\u2019univers.",
+      "synopsis": "Les Avengers et leurs alliés devront \u00eatre pr\u00eats à tout sacrifier\r\n pour neutraliser le redoutable Thanos avant que son attaque éclair\r\n ne conduise à la destruction complète de l\u2019univers.",
       "genre": "Action, Aventure, Fantastique",
       "prix": 10,
       "stock": 1
@@ -45,7 +45,7 @@
     {
       "img": "img/Prison.jpg",
       "nom": "Prison Break",
-      "synopsis": "Michael Scofield s'engage dans une v\u00e9ritable lutte contre la\r\n montre : son fr\u00e8re Lincoln est dans le couloir de la mort, en\r\n attente de son ex\u00e9cution. Persuad\u00e9 de son innocence mais \u00e0 court\r\n de solutions, Michael d\u00e9cide de se faire incarc\u00e9rer \u00e0 son tour\r\n dans le p\u00e9nitencier d'\u00e9tat de Fox River pour organiser leur\r\n \u00e9vasion...",
+      "synopsis": "Michael Scofield s'engage dans une véritable lutte contre la\r\n montre : son frère Lincoln est dans le couloir de la mort, en\r\n attente de son exécution. Persuadé de son innocence mais à court\r\n de solutions, Michael décide de se faire incarcérer à son tour\r\n dans le pénitencier d'état de Fox River pour organiser leur\r\n évasion...",
       "genre": "Drame, Thriller",
       "prix": 10,
       "stock": 5
@@ -53,7 +53,7 @@
     {
       "img": "img/peaky.jpg",
       "nom": "Peaky Blinders",
-      "synopsis": "En 1919, \u00e0 Birmingham, soldats, r\u00e9volutionnaires politiques et\r\n criminels combattent pour se faire une place dans le paysage\r\n industriel de l'apr\u00e8s-Guerre. Le Parlement s'attend \u00e0 une violente\r\n r\u00e9volte, et Winston Churchill mobilise des forces sp\u00e9ciales pour\r\n contenir les menaces. La famille Shelby compte parmi les membres\r\n les plus redoutables.",
+      "synopsis": "En 1919, à Birmingham, soldats, révolutionnaires politiques et\r\n criminels combattent pour se faire une place dans le paysage\r\n industriel de l'après-Guerre. Le Parlement s'attend à une violente\r\n révolte, et Winston Churchill mobilise des forces spéciales pour\r\n contenir les menaces. La famille Shelby compte parmi les membres\r\n les plus redoutables.",
       "genre": "Drame, Historique, Policier",
       "prix": 10,
       "stock": 6
@@ -61,7 +61,7 @@
     {
       "img": "img/casa.jpg",
       "nom": "La Casa De Papel",
-      "synopsis": "Huit voleurs font une prise d'otages dans la Maison royale de la\r\n Monnaie d'Espagne, tandis qu'un g\u00e9nie du crime manipule la police\r\n pour mettre son plan \u00e0 ex\u00e9cution.",
+      "synopsis": "Huit voleurs font une prise d'otages dans la Maison royale de la\r\n Monnaie d'Espagne, tandis qu'un génie du crime manipule la police\r\n pour mettre son plan à exécution.",
       "genre": "Drame, Thriller",
       "prix": 10,
       "stock": 6
@@ -69,7 +69,7 @@
     {
       "img": "img/Lupin.jpg",
       "nom": "Lupin",
-      "synopsis": "Il y a 25 ans, la vie du jeune Assane Diop est boulevers\u00e9e lorsque\r\n son p\u00e8re meurt apr\u00e8s avoir \u00e9t\u00e9 accus\u00e9 d'un crime qu'il n'a pas\r\n commis. Aujourd\u2019hui, Assane va s'inspirer de son h\u00e9ros, Ars\u00e8ne\r\n Lupin - Gentleman Cambrioleur, pour le venger\u2026",
+      "synopsis": "Il y a 25 ans, la vie du jeune Assane Diop est bouleversée lorsque\r\n son père meurt après avoir été accusé d'un crime qu'il n'a pas\r\n commis. Aujourd\u2019hui, Assane va s'inspirer de son héros, Arsène\r\n Lupin - Gentleman Cambrioleur, pour le venger\u2026",
       "genre": "Drame, Policier",
       "prix": 10,
       "stock": 6
@@ -77,7 +77,7 @@
     {
       "img": "img/Scorpion.jpg",
       "nom": "Scorpion",
-      "synopsis": "Walter O'Brien, surnomm\u00e9 Scorpion, un homme poss\u00e9dant le 4\u00e8me\r\n Q.I. le plus \u00e9lev\u00e9 du monde, a recrut\u00e9 quelques-uns des plus\r\n grands g\u00e9nies de la plan\u00e8te pour fonder une soci\u00e9t\u00e9 charg\u00e9e de\r\n r\u00e9soudre des crises urgentes et d'ampleur consid\u00e9rable, de celles\r\n que m\u00eame la CIA ne parvient pas \u00e0 r\u00e9gler seule. Inadapt\u00e9s\r\n socialement, ils apprennent ensemble \u00e0 vivre en communaut\u00e9, \u00e0\r\n d\u00e9passer leurs peurs, leurs phobies et \u00e0 vaincre leur solitude...",
+      "synopsis": "Walter O'Brien, surnommé Scorpion, un homme possédant le 4ème\r\n Q.I. le plus élevé du monde, a recruté quelques-uns des plus\r\n grands génies de la planète pour fonder une société chargée de\r\n résoudre des crises urgentes et d'ampleur considérable, de celles\r\n que m\u00eame la CIA ne parvient pas à régler seule. Inadaptés\r\n socialement, ils apprennent ensemble à vivre en communauté, à\r\n dépasser leurs peurs, leurs phobies et à vaincre leur solitude...",
       "genre": "Drame",
       "prix": 10,
       "stock": 6
@@ -86,7 +86,7 @@
   "Documentaire": [
     {
       "img": "img/Guerre.jpg",
-      "nom": "Premi\u00e8re guerre mondiale",
+      "nom": "Première guerre mondiale",
       "synopsis": "",
       "genre": "",
       "prix": 10,
