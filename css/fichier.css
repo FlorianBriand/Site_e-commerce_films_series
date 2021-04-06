@@ -6,6 +6,25 @@ body {
   font-family: Noto Sans, sans-serif;
   min-width: 1070px;
 }
+
+/* Tableaux */
+
+table {
+  margin-left: 35%;
+}
+table,
+td {
+  border: 1px solid #333;
+  text-align: center;
+  min-width: 100px;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
 #barreHaut {
   height: 58px;
   border-radius: 2000px;
@@ -48,7 +67,7 @@ menu {
   border-radius: 0px 40px 40px 0px;
 }
 
-button {
+input[type="button"] {
   display: inline-block;
   font-size: large;
   padding: 12px;
@@ -57,13 +76,33 @@ button {
   margin-right: 10px;
   border: #ccc;
   box-sizing: border-box;
-  text-decoration: none;
+
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #ffffff;
   background-color: #4eb5f1;
   text-align: center;
   transition: all 0.2s;
+  width: 35px;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  font-size: large;
+  padding: 12px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: #ccc;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #4eb5f1;
+  text-align: center;
+  transition: all 0.2s;
+  width: 250px;
 }
 
 .bSuite {
@@ -74,11 +113,12 @@ button {
   border-radius: 100px;
 }
 
-button:hover {
+input[type="button"]:hover,
+input[type="submit"]:hover {
   background-color: #4095c6;
 }
-
-button:disabled {
+input[type="submit"]:disabled,
+input[type="button"]:disabled {
   background: rgb(219, 201, 201);
 }
 
@@ -101,6 +141,7 @@ button:disabled {
   position: fixed;
   bottom: 200px;
   right: 50px;
+  width: 300px;
 }
 
 article {
@@ -226,27 +267,6 @@ footer {
   padding-bottom: 25px;
 }
 
-form {
-  margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  width: 600px;
-  text-align: center;
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-}
-
-form div + div {
-  margin-top: 1em;
-}
-
-label {
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
 input,
 textarea {
   font: 1em sans-serif;
@@ -272,4 +292,10 @@ textarea {
 
 .reussite {
   color: rgb(4, 167, 4);
+}
+
+.panier {
+  color: rgb(4, 167, 4);
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -69,46 +69,48 @@ if (isset($valider)) {
    include "menu.php";
    ?>
    <section>
-      <form action="" method="POST" onsubmit="valider()">
-         <lengend>Mes champs texte</legend>
-            <div>
+      <article style="margin-left:35%;text-align:center;height:auto;">
+         <form action="" method="POST">
+            <lengend>Mes champs texte</legend>
+               <br><br>
                <label for="Datecontact">Date du contact :</label>
-               <input type="date" id="date1" name="date1" placeholder="Entrez la date du contact" />
-            </div>
-            <span class="error" id="erreurdate1"><?php echo $messagedc ?></span><br />
-            <div>
+               <input type="date" id="date1" name="date1" placeholder="Entrez la date du contact" /><br>
+               <span class="error" id="erreurdate1"><?php echo $messagedc ?></span><br />
+               <br>
                <label for="name">Nom :</label>
                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
-            </div>
-            <span class="error" id="erreurnom"><?php echo $messagenom ?></span><br />
-            <div>
+               <br>
+               <span class="error" id="erreurnom"><?php echo $messagenom ?></span><br />
+               <br>
                <label for="prenom">Prénom :</label>
                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
-            </div>
-            <span class="error" id="erreurprenom"><?php echo $messageprenom ?></span><br />
-            <div>
+               <br>
+               <span class="error" id="erreurprenom"><?php echo $messageprenom ?></span><br />
+               <br>
                <label for="mail">Mail :</label>
                <input type="text" id="mail" name="mail" id="courriel" placeholder="Entrez votre mail" />
-            </div>
-            <span class="error" id="erreurmail"><?php echo $messagemail ?></span><br />
-            <div>
+               <br>
+               <span class="error" id="erreurmail"><?php echo $messagemail ?></span><br />
+               <br>
                <label for="datenaissance">Date de naissance :</label>
                <input type="date" id="date2" name="date2" placeholder="Entrez votre date de naissance" />
-            </div>
-            <span class="error" id="erreurdate2"><?php echo $messagedn ?></span><br />
-            <div>
+
+               <span class="error" id="erreurdate2"><?php echo $messagedn ?></span><br />
+               <br>
                <label for="sujet">Sujet :</label>
                <input type="text" id="sujet" name="sujet" placeholder="Entrez le sujet de votre mail" />
-            </div>
-            <div>
+               <br><br>
                <label for="sujet">Contenu :</label>
                <textarea id="message" name="message">Tapez ici votre mail</textarea>
-            </div>
-            <div>
-               <input type="submit" name="valider" value="Envoi des données" />
-               <?php echo $messageretour ?>
-            </div>
-      </form>
+               <br><br>
+               <input type="submit" name="valider" value="Envoi des données" onsubmit="valider()" />
+               <?php
+               if (isset($messageretour)) {
+                  echo $messageretour;
+               } ?>
+               </div>
+         </form>
+      </article>
    </section>
    <?php
    include "footer.php";
