@@ -22,13 +22,33 @@
       <?php
       }
       ?>
-
-
       <div class="lienBarre">
         <input type="search" id="barsearch" placeholder="Recherche" />
       </div>
-      <div class="lienBarre">
-        <a href="#">S'identifier</a>
-      </div>
+      <?php
+
+
+      if (isset($_SESSION['identifiant'])) {
+      ?>
+        <div class="lienBarre">
+          <?php
+          echo '<a href="">';
+          echo "Déconnexion";
+          ?>
+          </a>
+        </div>
+      <?php
+      } else {
+      ?>
+        <div class="lienBarre">
+          <?php
+          echo '<a href="">';
+          echo "Se connecter";
+          ?>
+          </a>
+        </div>
+      <?php
+      }
+      ?>
   </nav>
 </header>
