@@ -8,6 +8,8 @@ session_start();
 @$email = $_POST["mail"];
 @$datecontact = $_POST["date1"];
 @$datenaissance = $_POST["date2"];
+@$sujet = $_POST["sujet"];
+@$message = $_POST["message"];
 @$valider = $_POST["valider"];
 
 
@@ -18,7 +20,6 @@ if (isset($valider)) {
    $messagemail = '';
    $messagedc = '';
    $messagedn = '';
-
    if (empty($nom))
       $messagenom .= '<span class="error">Nom laissé vide. </span>';
    if (empty($prenom))
@@ -41,6 +42,12 @@ if (isset($valider)) {
    $messagemail = '';
    $messagedc = '';
    $messagedn = '';
+   $messageretour = '';
+   //Retirer les commentaires pour envoyer le mail.
+   /*$retour = mail('raphi.coutinho@gmail.com',$sujet, $message);
+         if ($retour) {
+         $messageretour.='<span class="reussite">Votre message a été envoyé avec succès</span>';
+    }*/
 }
 ?>
 
@@ -91,14 +98,15 @@ if (isset($valider)) {
             <span class="error" id="erreurdate2"><?php echo $messagedn ?></span><br />
             <div>
                <label for="sujet">Sujet :</label>
-               <input type="text" id="sujet" placeholder="Entrez le sujet de votre mail" />
+               <input type="text" id="sujet" name="sujet" placeholder="Entrez le sujet de votre mail" />
             </div>
             <div>
                <label for="sujet">Contenu :</label>
-               <textarea id="message">Tapez ici votre mail</textarea>
+               <textarea id="message" name="message">Tapez ici votre mail</textarea>
             </div>
             <div>
                <input type="submit" name="valider" value="Envoi des données" />
+               <?php echo $messageretour ?>
             </div>
       </form>
    </section>
