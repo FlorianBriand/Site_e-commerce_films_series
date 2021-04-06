@@ -14,7 +14,6 @@ session_start();
 
 <body>
    <?php
-   include "varSession.inc.php";
    include "header.php";
    include "menu.php";
    ?>
