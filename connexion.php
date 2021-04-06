@@ -57,21 +57,18 @@ session_start();
     ?>
 
     <form action="" method="POST">
-        <div>
+        <article style="margin-left:35%;text-align:center;">
             <?php echo $message; ?>
-            </br><br>
-            <label for="name">Identifiant :</label>
-            <input type="text" id="identifiant" name="identifiant" placeholder="Entrez votre identifiant" />
-        </div>
-        <div>
-            <label for="mdp">Mot de passe :</label>
-            <input type="text" id="mdp" name="mdp" placeholder="Entrez votre mot de passe" />
-        </div>
-        <div>
-            <input type="submit" name="valider" value="Envoi des données" />
+            Identifiant :<br><br>
+            <input type="text" id="identifiant" name="identifiant" placeholder="Entrez votre identifiant" /><br><br>
 
-        </div>
+            Mot de passe :<br><br>
+            <input type="text" id="mdp" name="mdp" placeholder="Entrez votre mot de passe" /><br><br>
+
+            <input type="submit" name="valider" value="Envoi des données" />
+        </article>
     </form>
+
     <?php
     include "footer.php";
     ?>
