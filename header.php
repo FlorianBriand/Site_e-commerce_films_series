@@ -32,7 +32,7 @@
       ?>
         <div class="lienBarre">
           <?php
-          echo '<a href="">';
+          echo '<a href="deconnexion.php">';
           echo "Déconnexion";
           ?>
           </a>
