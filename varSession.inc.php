@@ -1,8 +1,11 @@
 <?php
 $_SESSION['categories'] = array("Film", "Serie", "Documentaire");
 
-$_SESSION['produits'] = json_decode(file_get_contents("donnees.json"));
+if (!isset($_SESSION['produits'])) {
+    $_SESSION['produits'] = json_decode(file_get_contents("donnees.json"));
+}
 
+    
 /*
 $_SESSION['produits'] = array(
     "Film" => array(
