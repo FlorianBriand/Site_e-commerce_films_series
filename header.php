@@ -1,3 +1,6 @@
+<?php
+include "varSession.inc.php";
+?>
 <header>
   <nav>
 
@@ -30,6 +33,13 @@
 
       if (isset($_SESSION['id'])) {
       ?>
+        <div class="lienBarre">
+          <?php
+          echo '<a href="panier.php">';
+          echo "Panier";
+          ?>
+          </a>
+        </div>
         <div class="lienBarre">
           <?php
           echo '<a href="deconnexion.php">';
