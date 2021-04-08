@@ -2,7 +2,7 @@
 include "head.php";
 ?>
 
-<body>
+<body class="bg-gray-900">
    <?php
 
    $tab = $_SESSION['produits']->{$_GET['cat']};
@@ -22,23 +22,23 @@ include "head.php";
          }
       }
    ?>
-      <span class="panier" style="margin-left:35%;">
+      <span class="panier">
          Vos <?php echo $compteur ?> articles ont bien été ajoutés.
-         </br> </br><a style="margin-left:40%;" href="panier.php">Voir le panier
+         </br> </br><a href="panier.php">Voir le panier
          </a>
       </span>
    <?php }
    ?>
    <form action="" method="POST">
-      <section id="partieArticle">
+      <section class="bg-gray-900 flex flex-wrap justify-center content-center mt-5">
 
 
          <?php
          for ($i = 0; $i < sizeof($tab); $i++) {
          ?>
-            <article class="">
+            <article class="bg-gray-800  m-4 p-5 grid grid-cols-2 gap-4 h-96">
                <img class="imgArticle" src="img/<?php echo $tab[$i]->{'img'}; ?>" alt="" />
-               <div class="descrip">
+               <div class="text-center">
                   <p class="titre"><?php echo $tab[$i]->{'nom'}; ?></p>
                   <p class="intro">
                      Synopsis :
