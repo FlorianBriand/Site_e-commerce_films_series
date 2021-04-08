@@ -1,17 +1,6 @@
 <?php
-session_start();
+include "head.php";
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="css/fichier.css" />
-   <title>Netchill</title>
-   <script type="text/javascript" src="js/Projet.js"></script>
-</head>
 
 <body>
    <?php
@@ -47,8 +36,8 @@ session_start();
          <?php
          for ($i = 0; $i < sizeof($tab); $i++) {
          ?>
-            <article>
-               <img class="imgArticle" src=<?php echo $tab[$i]->{'img'}; ?> alt="" />
+            <article class="">
+               <img class="imgArticle" src="img/<?php echo $tab[$i]->{'img'}; ?>" alt="" />
                <div class="descrip">
                   <p class="titre"><?php echo $tab[$i]->{'nom'}; ?></p>
                   <p class="intro">
@@ -70,10 +59,10 @@ session_start();
                                                                                  } ?> />
 
                   <br><br>
-                  <div style="display: none" class="stock">Stock :
+                  <div style="display: none" class="stock">
                      <span id="countStock<?php echo $i ?>">
                         <?php echo $tab[$i]->{'stock'} ?>
-                     </span>
+                     </span> articles restants
                   </div>
                </div>
 

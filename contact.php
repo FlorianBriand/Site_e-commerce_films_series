@@ -1,7 +1,5 @@
 <?php
-session_start();
-?>
-<?php
+include "head.php";
 
 @$nom = $_POST["nom"];
 @$prenom = $_POST["prenom"];
@@ -50,18 +48,6 @@ if (isset($valider)) {
     }*/
 }
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/fichier.css">
-   <script type="text/javascript" src="js/Projet.js"> </script>
-   <title>Netchill</title>
-</head>
 
 <body>
    <?php
