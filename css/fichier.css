@@ -1,24 +1,4 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(145, 207, 231);
-  font-family: Noto Sans, sans-serif;
-  min-width: 1070px;
-}
-
-/* Tableaux */
-
-table {
-  margin-left: 35%;
-}
-table,
-td {
-  border: 1px solid #333;
-  text-align: center;
-  min-width: 100px;
-}
-
+/*
 thead,
 tfoot {
   background-color: #333;
@@ -65,7 +45,7 @@ menu {
   margin-top: 75px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0px 40px 40px 0px;
-}
+}*/
 
 input[type="button"] {
   display: inline-block;
@@ -121,14 +101,23 @@ input[type="submit"]:disabled,
 input[type="button"]:disabled {
   background: rgb(219, 201, 201);
 }
-
+/*
 #accueil {
   background-image: url("../img/pied.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
   text-align: center;
+}*/
+#bStock {
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+  width: 300px;
 }
+
+/*
+
 #partieArticle {
   display: flex;
   flex-wrap: wrap;
@@ -137,15 +126,10 @@ input[type="button"]:disabled {
   justify-content: center;
 }
 
-#bStock {
-  position: fixed;
-  bottom: 200px;
-  right: 50px;
-  width: 300px;
-}
-
+*/
 article {
-  width: 450px;
+  width: 500px;
+} /*
   height: 300px;
   margin: 15px;
   background-color: rgb(10, 152, 199);
@@ -155,11 +139,11 @@ article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: block;
 }
-
+*/
 img:hover {
   transform: scale(1.06);
 }
-
+/*
 .titre {
   color: #ffffffb2;
   text-shadow: 2px 2px 4px #000000;
@@ -175,9 +159,7 @@ img:hover {
   display: none;
 }
 
-#resume {
-  display: none;
-}
+
 .genre {
   color: #ffffffb2;
   font-size: 80%;
@@ -189,7 +171,10 @@ img:hover {
   font-size: 100%;
   display: block;
 }
-
+*/
+#resume {
+  display: none;
+}
 .input {
   width: 13px;
   height: 13px;
@@ -200,7 +185,7 @@ img:hover {
   top: -1px;
   *overflow: hidden;
 }
-
+/*
 .imgArticle {
   height: 250px;
   width: 170px;
@@ -266,7 +251,7 @@ footer {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
+*/
 input,
 textarea {
   font: 1em sans-serif;
