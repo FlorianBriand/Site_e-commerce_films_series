@@ -1,64 +1,60 @@
 <?php
 include "varSession.inc.php";
 ?>
-<header>
-  <nav>
+<!-- id="barreHaut"-->
+<header class="w-full bg-gradient-to-r from-black to-red-800 p-5 rounded-b-3xl flex justify-between ">
 
-    <div id="barreHaut">
-      <div class="lienBarre">
-        <a href="index.php">Accueil</a>
+  <div class=" flex justify-between items-center float-left w-1/2">
+
+    <div class="float-left  mx-8 ">
+      <a class="text-red-700 font-bold text-3xl" href="index.php">NETCHILL</a>
+    </div>
+
+    <div class="float-left text-white text-2xl mx-4 ">
+      <a href="index.php">Accueil</a>
+    </div>
+
+    <?php
+    for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
+    ?>
+      <div class="float-left text-white text-2xl mx-4 ">
+
+
+        <a href="films.php?cat=<?php echo $_SESSION['categories'][$i] ?>">
+
+          <?php echo $_SESSION['categories'][$i];
+          ?>
+        </a>
       </div>
-
-      <?php
-      for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
-
-      ?>
-        <div class="lienBarre">
-          <?php
-
-          echo '<a href="films.php?cat=' . $_SESSION['categories'][$i] . '">';
-
-          echo $_SESSION['categories'][$i];
-          ?>
-          </a>
-        </div>
-      <?php
-      }
-      ?>
-      <div class="lienBarre">
-        <input type="search" id="barsearch" placeholder="Recherche" />
+    <?php
+    }
+    ?>
+  </div>
+  <div class="flex items-center justify-end mr-5">
+    <?php
+    if (isset($_SESSION['id'])) {
+    ?>
+      <div class="text-white text-2xl mx-4 ">
+        <a href="panier.php">
+          Panier
+        </a>
       </div>
-      <?php
+      <div class="text-white text-2xl mx-4 ">
+        <a href="deconnexion.php">
+          Déconnexion
+        </a>
+      </div>
+    <?php
+    } else {
+    ?>
+      <div class="text-white text-2xl mx-4 ">
+        <a href="connexion.php">
+          Se connecter
 
-
-      if (isset($_SESSION['id'])) {
-      ?>
-        <div class="lienBarre">
-          <?php
-          echo '<a href="panier.php">';
-          echo "Panier";
-          ?>
-          </a>
-        </div>
-        <div class="lienBarre">
-          <?php
-          echo '<a href="deconnexion.php">';
-          echo "Déconnexion";
-          ?>
-          </a>
-        </div>
-      <?php
-      } else {
-      ?>
-        <div class="lienBarre">
-          <?php
-          echo '<a href="connexion.php">';
-          echo "Se connecter";
-          ?>
-          </a>
-        </div>
-      <?php
-      }
-      ?>
-  </nav>
+        </a>
+      </div>
+    <?php
+    }
+    ?>
+  </div>
 </header>
