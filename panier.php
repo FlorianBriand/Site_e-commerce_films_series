@@ -2,7 +2,7 @@
 include "head.php";
 ?>
 
-<body class="bg-gray-900">
+<body style="background-color: #141414;">
     <?php
     include "header.php";
     include "menu.php";

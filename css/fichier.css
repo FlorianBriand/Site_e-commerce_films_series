@@ -45,7 +45,7 @@ menu {
   margin-top: 75px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 0px 40px 40px 0px;
-}*/
+}
 
 input[type="button"] {
   display: inline-block;
@@ -84,7 +84,7 @@ input[type="submit"] {
   transition: all 0.2s;
   width: 250px;
 }
-
+*/
 .bSuite {
   padding-left: 10px;
   padding-right: 10px;
@@ -92,14 +92,14 @@ input[type="submit"] {
   padding-bottom: 5px;
   border-radius: 100px;
 }
-
+/*
 input[type="button"]:hover,
 input[type="submit"]:hover {
   background-color: #4095c6;
-}
+}*/
 input[type="submit"]:disabled,
 input[type="button"]:disabled {
-  background: rgb(219, 201, 201);
+  background-color: rgba(128, 128, 128, 0.37);
 }
 /*
 #accueil {
@@ -108,15 +108,15 @@ input[type="button"]:disabled {
   background-size: cover;
   min-height: 800px;
   text-align: center;
-}*/
+}
+
 #bStock {
   position: fixed;
   bottom: 200px;
   right: 50px;
-  width: 300px;
 }
 
-/*
+
 
 #partieArticle {
   display: flex;
@@ -175,6 +175,7 @@ img:hover {
 #resume {
   display: none;
 }
+/*
 .input {
   width: 13px;
   height: 13px;
@@ -185,7 +186,7 @@ img:hover {
   top: -1px;
   *overflow: hidden;
 }
-/*
+
 .imgArticle {
   height: 250px;
   width: 170px;
@@ -252,7 +253,7 @@ footer {
   padding-bottom: 25px;
 }
 */
-input,
+
 textarea {
   font: 1em sans-serif;
 
