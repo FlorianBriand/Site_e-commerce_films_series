@@ -7,9 +7,6 @@ include "head.php";
 
    $tab = $_SESSION['produits']->{$_GET['cat']};
 
-   include "header.php";
-   include "menu.php";
-
    @$valider = $_POST["valider"];
    if (isset($valider)) {
       $compteur = 0;
@@ -21,6 +18,13 @@ include "head.php";
             $compteur = $compteur + $_POST["quantite" . $i];
          }
       }
+      if (isset($_SESSION['nbArticle'])) {
+         $_SESSION['nbArticle'] = $_SESSION['nbArticle'] + $compteur;
+      } else {
+         $_SESSION['nbArticle'] = $compteur;
+      }
+
+
    ?>
       <span class="panier">
          Vos <?php echo $compteur ?> articles ont bien été ajoutés.
@@ -28,6 +32,8 @@ include "head.php";
          </a>
       </span>
    <?php }
+   include "header.php";
+   include "menu.php";
    ?>
    <form action="" method="POST">
       <section class="flex flex-wrap justify-center content-center mt-5">

@@ -37,6 +37,11 @@ include "varSession.inc.php";
       <div class="text-white text-2xl mx-4 ">
         <a href="panier.php">
           Panier
+          <?php
+          if (isset($_SESSION['nbArticle'])) {
+            echo " : " . $_SESSION['nbArticle'] . " articles";
+          }
+          ?>
         </a>
       </div>
       <div class="text-white text-2xl mx-4 ">
