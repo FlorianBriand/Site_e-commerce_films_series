@@ -36,7 +36,7 @@ include "head.php";
          <?php
          for ($i = 0; $i < sizeof($tab); $i++) {
          ?>
-            <article class=" bg-red-900 m-4 p-5 grid grid-cols-2 h-96 text-white rounded-3xl justify-center content-center">
+            <article class=" bg-gradient-to-t from-black via-red-700 to-red-800 m-4 p-5 grid grid-cols-2 h-96 text-white rounded-3xl justify-center content-center">
                <img class="imgArticle w-44 place-self-center rounded-lg " src="img/<?php echo $tab[$i]->{'img'}; ?>" alt="" />
                <div class="text-center">
                   <p class="titre text-black text-2xl font-bold mb-5 "><?php echo $tab[$i]->{'nom'}; ?></p>

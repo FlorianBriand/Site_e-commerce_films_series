@@ -2,7 +2,7 @@
 include "varSession.inc.php";
 ?>
 <!-- id="barreHaut"-->
-<header class="w-full bg-gradient-to-r from-black to-red-800 p-5 rounded-b-3xl flex justify-between ">
+<header class="w-full bg-gradient-to-r from-black via-black to-red-800 p-5 rounded-b-3xl flex justify-between ">
 
   <div class=" flex justify-between items-center float-left w-1/2">
 
