@@ -1,9 +1,8 @@
 {
-  "Film": [
+  "Films": [
     {
       "img": "venom.jpg",
       "nom": "Venom",
-      "synopsis": "Possédé par un symbiote qui agit de manière autonome, le journaliste Eddie Brock devient le protecteur létal Venom.",
       "genre": "Science Fiction, Action",
       "prix": 10,
       "stock": 8,
@@ -12,7 +11,6 @@
     {
       "img": "farfromhome.jpg",
       "nom": "Spider-man : Far From Home",
-      "synopsis": "L'araignée sympa du quartier décide de rejoindre ses meilleurs\r\n amis pour des vacances en Europe.\r\n Cependant, le projet de Peter de laisser son costume de\r\n super-héros derrière lui pendant quelques semaines est rapidement\r\n compromis quand il accepte à contrecoeur d'aider Nick Fury à\r\n découvrir le mystère de plusieurs attaques de créatures, qui\r\n ravagent le continent !",
       "genre": "Action, Aventure",
       "prix": 10,
       "stock": 6,
@@ -21,7 +19,6 @@
     {
       "img": "titanic.jpg",
       "nom": "Titanic",
-      "synopsis": "Southampton, 10 avril 1912. Le paquebot le plus grand et le plus\r\n moderne du monde, réputé pour son insubmersibilité, le Titanic,\r\n appareille pour son premier voyage. Quatre jours plus tard, il\r\n heurte un iceberg. A son bord, un artiste pauvre et une grande\r\n bourgeoise tombent amoureux.",
       "genre": "Drame, Romance",
       "prix": 10,
       "stock": 8,
@@ -30,7 +27,6 @@
     {
       "img": "ultron.jpg",
       "nom": "Avengers : l'ère d'ultron",
-      "synopsis": "Alors que Tony Stark tente de relancer un programme de maintien de\r\n la paix jusque-là suspendu, les choses tournent mal et les\r\n super-héros Iron Man, Captain America, Thor, Hulk, Black Widow et\r\n Hawkeye vont devoir à nouveau unir leurs forces pour combattre le\r\n plus puissant de leurs adversaires : le terrible Ultron, un \u00eatre\r\n technologique terrifiant qui s\u2019est juré d\u2019éradiquer l\u2019espèce\r\n humaine.",
       "genre": "Action, Aventure, Science Fiction",
       "prix": 10,
       "stock": 1,
@@ -39,18 +35,16 @@
     {
       "img": "infinitywar.jpg",
       "nom": "Avengers : Infinity War",
-      "synopsis": "Les Avengers et leurs alliés devront \u00eatre pr\u00eats à tout sacrifier\r\n pour neutraliser le redoutable Thanos avant que son attaque éclair\r\n ne conduise à la destruction complète de l\u2019univers.",
       "genre": "Action, Aventure, Fantastique",
       "prix": 10,
       "stock": 1,
       "panier": 0
     }
   ],
-  "Serie": [
+  "Séries": [
     {
       "img": "Prison.jpg",
       "nom": "Prison Break",
-      "synopsis": "Michael Scofield s'engage dans une véritable lutte contre la\r\n montre : son frère Lincoln est dans le couloir de la mort, en\r\n attente de son exécution. Persuadé de son innocence mais à court\r\n de solutions, Michael décide de se faire incarcérer à son tour\r\n dans le pénitencier d'état de Fox River pour organiser leur\r\n évasion...",
       "genre": "Drame, Thriller",
       "prix": 10,
       "stock": 5,
@@ -59,7 +53,6 @@
     {
       "img": "peaky.jpg",
       "nom": "Peaky Blinders",
-      "synopsis": "En 1919, à Birmingham, soldats, révolutionnaires politiques et\r\n criminels combattent pour se faire une place dans le paysage\r\n industriel de l'après-Guerre. Le Parlement s'attend à une violente\r\n révolte, et Winston Churchill mobilise des forces spéciales pour\r\n contenir les menaces. La famille Shelby compte parmi les membres\r\n les plus redoutables.",
       "genre": "Drame, Historique, Policier",
       "prix": 10,
       "stock": 6,
@@ -68,7 +61,6 @@
     {
       "img": "casa.jpg",
       "nom": "La Casa De Papel",
-      "synopsis": "Huit voleurs font une prise d'otages dans la Maison royale de la\r\n Monnaie d'Espagne, tandis qu'un génie du crime manipule la police\r\n pour mettre son plan à exécution.",
       "genre": "Drame, Thriller",
       "prix": 10,
       "stock": 6,
@@ -77,7 +69,6 @@
     {
       "img": "Lupin.jpg",
       "nom": "Lupin",
-      "synopsis": "Il y a 25 ans, la vie du jeune Assane Diop est bouleversée lorsque\r\n son père meurt après avoir été accusé d'un crime qu'il n'a pas\r\n commis. Aujourd\u2019hui, Assane va s'inspirer de son héros, Arsène\r\n Lupin - Gentleman Cambrioleur, pour le venger\u2026",
       "genre": "Drame, Policier",
       "prix": 10,
       "stock": 6,
@@ -86,18 +77,16 @@
     {
       "img": "Scorpion.jpg",
       "nom": "Scorpion",
-      "synopsis": "Walter O'Brien, surnommé Scorpion, un homme possédant le 4ème\r\n Q.I. le plus élevé du monde, a recruté quelques-uns des plus\r\n grands génies de la planète pour fonder une société chargée de\r\n résoudre des crises urgentes et d'ampleur considérable, de celles\r\n que m\u00eame la CIA ne parvient pas à régler seule. Inadaptés\r\n socialement, ils apprennent ensemble à vivre en communauté, à\r\n dépasser leurs peurs, leurs phobies et à vaincre leur solitude...",
       "genre": "Drame",
       "prix": 10,
       "stock": 6,
       "panier": 0
     }
   ],
-  "Documentaire": [
+  "Documentaires": [
     {
       "img": "Guerre.jpg",
       "nom": "Première guerre mondiale",
-      "synopsis": "",
       "genre": "",
       "prix": 10,
       "stock": 6,
@@ -106,7 +95,6 @@
     {
       "img": "Icare.jpg",
       "nom": "Icarus",
-      "synopsis": "",
       "genre": "",
       "prix": 10,
       "stock": 6,
@@ -115,7 +103,6 @@
     {
       "img": "Mayday.jpg",
       "nom": "Mayday",
-      "synopsis": "",
       "genre": "",
       "prix": 10,
       "stock": 6,
@@ -124,7 +111,6 @@
     {
       "img": "topgear.jpg",
       "nom": "TopGear",
-      "synopsis": "",
       "genre": "",
       "prix": 10,
       "stock": 6,
@@ -133,7 +119,6 @@
     {
       "img": "Animal.jpg",
       "nom": "Meilleur espoir animal",
-      "synopsis": "",
       "genre": "",
       "prix": 10,
       "stock": 6,

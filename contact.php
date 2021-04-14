@@ -61,27 +61,27 @@ if (isset($valider)) {
                <br><br>
                <label for="Datecontact">Date du contact :</label>
                <input type="date" id="date1" name="date1" placeholder="Entrez la date du contact" /><br>
-               <span class="error" id="erreurdate1"><?php echo $messagedc ?></span><br />
+               <span class="error" id="erreurdate1"><?= $messagedc ?></span><br />
                <br>
                <label for="name">Nom :</label>
                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
                <br>
-               <span class="error" id="erreurnom"><?php echo $messagenom ?></span><br />
+               <span class="error" id="erreurnom"><?= $messagenom ?></span><br />
                <br>
                <label for="prenom">Prénom :</label>
                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
                <br>
-               <span class="error" id="erreurprenom"><?php echo $messageprenom ?></span><br />
+               <span class="error" id="erreurprenom"><?= $messageprenom ?></span><br />
                <br>
                <label for="mail">Mail :</label>
                <input type="text" id="mail" name="mail" id="courriel" placeholder="Entrez votre mail" />
                <br>
-               <span class="error" id="erreurmail"><?php echo $messagemail ?></span><br />
+               <span class="error" id="erreurmail"><?= $messagemail ?></span><br />
                <br>
                <label for="datenaissance">Date de naissance :</label>
                <input type="date" id="date2" name="date2" placeholder="Entrez votre date de naissance" />
 
-               <span class="error" id="erreurdate2"><?php echo $messagedn ?></span><br />
+               <span class="error" id="erreurdate2"><?= $messagedn ?></span><br />
                <br>
                <label for="sujet">Sujet :</label>
                <input type="text" id="sujet" name="sujet" placeholder="Entrez le sujet de votre mail" />

@@ -48,7 +48,7 @@ include "head.php";
 
     <form action="" method="POST">
         <article style="margin-left:35%;text-align:center;">
-            <?php echo $message; ?>
+            <?= $message; ?>
             Identifiant :<br><br>
             <input type="text" id="identifiant" name="identifiant" placeholder="Entrez votre identifiant" /><br><br>
 
@@ -67,7 +67,7 @@ include "head.php";
                 </h2>
             </div>
             <form class="space-y-6" action="" method="POST">
-                <?php echo $message; ?>
+                <?= $message; ?>
                 <div class="rounded-md shadow-sm -space-y-px">
                     <div>
                         <input id="identifiant" name="identifiant" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-red-900  placeholder-red-900 text-red-900  rounded-t-md focus:outline-none focus:ring-red-900  focus:border-red-900 focus:z-10 sm:text-sm" placeholder="Identifiant">

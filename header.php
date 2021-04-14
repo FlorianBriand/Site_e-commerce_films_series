@@ -20,9 +20,9 @@ include "varSession.inc.php";
       <div class="float-left text-white text-2xl mx-4 ">
 
 
-        <a href="films.php?cat=<?php echo $_SESSION['categories'][$i] ?>">
+        <a href="films.php?cat=<?= $_SESSION['categories'][$i] ?>">
 
-          <?php echo $_SESSION['categories'][$i];
+          <?= $_SESSION['categories'][$i];
           ?>
         </a>
       </div>

@@ -50,28 +50,28 @@ include "head.php";
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 h-10 w-10 ">
-                                                        <?php echo $tab[$j]->{'panier'}; ?>
+                                                        <?= $tab[$j]->{'panier'}; ?>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 ">
-                                                        <?php echo $tab[$j]->{'nom'}; ?>
+                                                        <?= $tab[$j]->{'nom'}; ?>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class=" ">
                                                 <div class="p-4">
                                                     <div class=" ">
-                                                        <img class="imgArticle w-32" src="img/<?php echo $tab[$j]->{'img'}; ?>" alt="" />
+                                                        <img class="imgArticle w-32" src="img/<?= $tab[$j]->{'img'}; ?>" alt="" />
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 h-10 w-10 ">
-                                                        <?php echo $tab[$j]->{'panier'} * $tab[$j]->{'prix'}; ?>
+                                                        <?= $tab[$j]->{'panier'} * $tab[$j]->{'prix'}; ?>
                                                     </div>
                                                 </div>
                                             </td>
@@ -86,7 +86,7 @@ include "head.php";
                                     <td>Prix total</td>
                                     <td> </td>
                                     <td></td>
-                                    <td><?php echo $prixtt; ?> </td>
+                                    <td><?= $prixtt; ?> </td>
                                 </tr>
                             <?php
                             }

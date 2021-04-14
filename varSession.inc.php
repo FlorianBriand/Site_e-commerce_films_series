@@ -1,5 +1,5 @@
 <?php
-$_SESSION['categories'] = array("Film", "Serie", "Documentaire");
+$_SESSION['categories'] = array("Films", "Séries", "Documentaires");
 
 if (!isset($_SESSION['produits'])) {
     $_SESSION['produits'] = json_decode(file_get_contents("donnees.json"));
