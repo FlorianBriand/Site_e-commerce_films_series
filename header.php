@@ -1,5 +1,5 @@
 <?php
-include "varSession.inc.php";
+include_once("bddData.php");
 ?>
 <!-- id="barreHaut"-->
 <header class="w-full bg-gradient-to-r from-black via-black to-red-800 p-5 rounded-b-3xl flex justify-between ">
