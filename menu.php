@@ -7,12 +7,12 @@
         <?php
         for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
         ?>
-            <a class="text-2xl text-left" href="films.php?cat=<?= $_SESSION['categories'][$i]; ?>">
+            <a class=" text-2xl text-left" href="films.php?cat=<?= $_SESSION['categories'][$i]; ?>">
                 - <?= $_SESSION['categories'][$i]; ?>
             </a>
         <?php
         }
         ?>
-        <a class="my-5 " href="contact.php">Nous contacter</a>
+        <a class="hover:underline my-5 " href="contact.php">Nous contacter</a>
     </menu>
 </div>

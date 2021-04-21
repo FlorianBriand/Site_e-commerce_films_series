@@ -10,14 +10,14 @@
       <a class="text-red-700 font-bold text-3xl" href="index.php">NETCHILL</a>
     </div>
 
-    <div class="float-left text-white text-2xl mx-4 ">
+    <div class="hover:underline  float-left text-white text-2xl mx-4 ">
       <a href="index.php">Accueil</a>
     </div>
 
     <?php
     for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
     ?>
-      <div class="float-left text-white text-2xl mx-4 ">
+      <div class="hover:underline float-left text-white text-2xl mx-4 ">
 
 
         <a href="films.php?cat=<?= $_SESSION['categories'][$i] ?>">
@@ -30,11 +30,11 @@
     }
     ?>
   </div>
-  <div class="flex items-center justify-end mr-5">
+  <div class=" flex items-center justify-end mr-5">
     <?php
     if (isset($_SESSION['id'])) {
     ?>
-      <div class="text-white text-2xl mx-4 ">
+      <div class=" hover:underline text-white text-2xl mx-4 ">
         <a href="panier.php">
           Panier
           <?php
@@ -44,7 +44,7 @@
           ?>
         </a>
       </div>
-      <div class="text-white text-2xl mx-4 ">
+      <div class="hover:underline text-white text-2xl mx-4 ">
         <a href="deconnexion.php">
           Déconnexion
         </a>
@@ -52,7 +52,7 @@
     <?php
     } else {
     ?>
-      <div class="text-white text-2xl mx-4 ">
+      <div class="hover:underline text-white text-2xl mx-4 ">
         <a href="connexion.php">
           Se connecter
 
