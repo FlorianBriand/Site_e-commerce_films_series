@@ -2,10 +2,10 @@
 include "head.php";
 if (!isset($_GET['cat'])) {
    header('Location: index.php');
-} else {
-
-   $tab = $_SESSION['produits'][$_GET['cat']];
 }
+$tab = $_SESSION['produits'][$_GET['cat']];
+
+
 ?>
 
 <body style="background-color: #141414;">
@@ -13,18 +13,11 @@ if (!isset($_GET['cat'])) {
 
    @$valider = $_POST["valider"];
    if (isset($valider)) {
-      var_dump("C'est validé");
       $compteur = 0;
       for ($i = 0; $i < sizeof($tab); $i++) {
          if (isset($_POST["quantite" . $i])) {
-            var_dump("Quantité :" . $_POST["quantite" . $i]);
-            ///////////////////////////////////////////////////////////////////////////////////////////
-
-            //pb
-
-            ///////////////////////////////////////////////////////////////////////////////////////////
-            $tab[$i]['panier'] = $tab[$i]['panier'] + $_POST["quantite" . $i];
-            $tab[$i]['stock'] = $tab[$i]['stock'] - $_POST["quantite" . $i];
+            $_SESSION['produits'][$_GET['cat']][$i]['panier'] = $_SESSION['produits'][$_GET['cat']][$i]['panier'] + $_POST["quantite" . $i];
+            $_SESSION['produits'][$_GET['cat']][$i]['stock'] = $_SESSION['produits'][$_GET['cat']][$i]['stock'] - $_POST["quantite" . $i];
             $compteur = $compteur + $_POST["quantite" . $i];
          }
       }
@@ -42,15 +35,19 @@ if (!isset($_GET['cat'])) {
          </a>
       </span>
    <?php }
+
    include "header.php";
    include "menu.php";
+
+
+
    ?>
    <form action="" method="POST">
       <section class="flex flex-wrap justify-center content-center mt-5">
 
 
          <?php
-         for ($i = 0; $i < sizeof($tab); $i++) {
+         for ($i = 0; $i < sizeof($_SESSION['produits'][$_GET['cat']]); $i++) {
          ?>
             <article class=" bg-gradient-to-t from-black via-red-700 to-red-800 m-4 p-5 grid grid-cols-2 h-96 text-white rounded-3xl justify-center content-center">
 

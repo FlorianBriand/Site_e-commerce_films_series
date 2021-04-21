@@ -1,5 +1,6 @@
 <?php
-include "head.php";
+
+include_once("head.php");
 ?>
 
 <body style="background-color: #141414;">
@@ -64,7 +65,7 @@ include "head.php";
                                             <td class=" ">
                                                 <div class="p-4">
                                                     <div class=" ">
-                                                        <img class="imgArticle w-32" src="img/<?= $tab[$j]['img']; ?>" alt="" />
+                                                        <img class="imgArticle w-32" src="img/<?= $tab[$j]['picture']; ?>" alt="" />
                                                     </div>
                                                 </div>
                                             </td>
