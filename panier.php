@@ -38,40 +38,40 @@ include "head.php";
                             <?php
                             for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
 
-                                $tab = $_SESSION['produits']->{$_SESSION['categories'][$i]};
+                                $tab = $_SESSION['produits'][$_SESSION['categories'][$i]];
 
                                 for ($j = 0; $j < sizeof($tab); $j++) {
-                                    if ($tab[$j]->{'panier'} > 0) {
+                                    if ($tab[$j]['panier'] > 0) {
                                         $vide = 0;
-                                        $prixtt = $prixtt + $tab[$j]->{'prix'} * $tab[$j]->{'panier'};
+                                        $prixtt = $prixtt + $tab[$j]['prix'] * $tab[$j]['panier'];
 
                             ?>
                                         <tr>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 h-10 w-10 ">
-                                                        <?= $tab[$j]->{'panier'}; ?>
+                                                        <?= $tab[$j]['panier']; ?>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 ">
-                                                        <?= $tab[$j]->{'nom'}; ?>
+                                                        <?= $tab[$j]['nom']; ?>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class=" ">
                                                 <div class="p-4">
                                                     <div class=" ">
-                                                        <img class="imgArticle w-32" src="img/<?= $tab[$j]->{'img'}; ?>" alt="" />
+                                                        <img class="imgArticle w-32" src="img/<?= $tab[$j]['img']; ?>" alt="" />
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 h-10 w-10 ">
-                                                        <?= $tab[$j]->{'panier'} * $tab[$j]->{'prix'}; ?>
+                                                        <?= $tab[$j]['panier'] * $tab[$j]['prix']; ?>
                                                     </div>
                                                 </div>
                                             </td>
