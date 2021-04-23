@@ -31,3 +31,9 @@ VALUES
     ('1', 'Films'),
     ('2', 'Series'),
     ('3', 'Documentaires');
+
+INSERT INTO users
+    (nom, mdp)
+VALUES
+    ('Flo', '123'),
+    ('Raph', '456');

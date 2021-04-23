@@ -4,12 +4,12 @@ session_destroy();
 include "head.php";
 ?>
 
-<body>
+<body style="background-color: #141414;">
     <?php
     include "header.php";
     include "menu.php";
     ?>
-    <span>Déconnexion réussie</span>
+    <span class="text-green-500 text-2xl">Déconnexion réussie</span>
 
 
 </body>

@@ -49,47 +49,47 @@ if (isset($valider)) {
 }
 ?>
 
-<body>
+<body style="background-color: #141414;">
    <?php
    include "header.php";
    include "menu.php";
    ?>
    <section>
-      <article style="margin-left:35%;text-align:center;height:auto;">
-         <form action="" method="POST">
-            <lengend>Mes champs texte</legend>
+      <article class="mt-10 bg-red-900 p-5 rounded-3xl" style="margin-left:35%;text-align:center;height:auto;">
+         <form class="text-white " action="" method="POST">
+            <lengend class="">Formulaire de contact</legend>
                <br><br>
                <label for="Datecontact">Date du contact :</label>
-               <input type="date" id="date1" name="date1" placeholder="Entrez la date du contact" /><br>
+               <input class="text-black rounded-md" type="date" id="date1" name="date1" placeholder="Entrez la date du contact" /><br>
                <span class="error" id="erreurdate1"><?= $messagedc ?></span><br />
                <br>
                <label for="name">Nom :</label>
-               <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
+               <input class="text-black rounded-md" type="text" id="nom" name="nom" placeholder="Entrez votre nom" />
                <br>
                <span class="error" id="erreurnom"><?= $messagenom ?></span><br />
                <br>
                <label for="prenom">Prénom :</label>
-               <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
+               <input class="text-black rounded-md" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
                <br>
                <span class="error" id="erreurprenom"><?= $messageprenom ?></span><br />
                <br>
                <label for="mail">Mail :</label>
-               <input type="text" id="mail" name="mail" id="courriel" placeholder="Entrez votre mail" />
+               <input class="text-black rounded-md" type="text" id="mail" name="mail" id="courriel" placeholder="Entrez votre mail" />
                <br>
                <span class="error" id="erreurmail"><?= $messagemail ?></span><br />
                <br>
                <label for="datenaissance">Date de naissance :</label>
-               <input type="date" id="date2" name="date2" placeholder="Entrez votre date de naissance" />
+               <input class="text-black rounded-md" type="date" id="date2" name="date2" placeholder="Entrez votre date de naissance" />
 
                <span class="error" id="erreurdate2"><?= $messagedn ?></span><br />
                <br>
                <label for="sujet">Sujet :</label>
-               <input type="text" id="sujet" name="sujet" placeholder="Entrez le sujet de votre mail" />
+               <input class="text-black rounded-md" rounded-md type="text" id="sujet" name="sujet" placeholder="Entrez le sujet de votre mail" />
                <br><br>
                <label for="sujet">Contenu :</label>
-               <textarea id="message" name="message">Tapez ici votre mail</textarea>
+               <textarea id="message" class="text-black " name="message">Tapez ici votre mail</textarea>
                <br><br>
-               <input type="submit" name="valider" value="Envoi des données" onsubmit="valider()" />
+               <input text-black class="mt-2 px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 " type="submit" name="valider" value="Envoi des données" onsubmit="valider()" />
                <?php
                if (isset($messageretour)) {
                   echo $messageretour;

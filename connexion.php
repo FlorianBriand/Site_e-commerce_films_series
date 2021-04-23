@@ -7,57 +7,41 @@ include "head.php";
     <?php
 
 
-    $xml = simplexml_load_file("log.xml") or die("Error: Cannot create object");
-    $id = $xml->{'id'};
-    $mdp = $xml->{'mdp'};
 
     @$identifiant = $_POST["identifiant"];
     @$motdepasse = $_POST["mdp"];
     @$valider = $_POST["valider"];
     $message = '';
     $retour = 0;
+    $verif = 0;
     if (isset($valider)) {
-        for ($i = 0; $i < sizeof($id); $i++) {
-            if ($identifiant == $id[$i]) {
-                if ($motdepasse == $mdp[$i]) {
-                    $retour = 1;
-                    break;
+        $messageretour = '';
+        $requete = "SELECT * FROM users WHERE nom = '$identifiant'";
+        $resultat = recup($requete);
+        while ($bdd = mysqli_fetch_array($resultat)) {
+            $verif = 1;
+            if (count($bdd) != 0) {
+                if (($_POST["mdp"] == $bdd['mdp']) && ($_POST["identifiant"] == $bdd['nom'])) {
+                    $_SESSION['id'] = $identifiant;
+                    $_SESSION['mdp'] = $motdepasse;
+                    $messageretour .= '<span class="reussite">Connexion avec succès</span>';
+                } elseif (($_POST["mdp"] != $bdd['mdp']) && ($_POST["identifiant"] == $bdd['nom'])) {
+                    $messageretour .= '<span class="error">Mot de passe incorrect</span>';
                 } else {
-                    $retour = 2;
-                    break;
+                    $messageretour .= '<span class="error">Echec de la connexion 2</span>';
                 }
             }
         }
-        if ($retour == 1) {
-            $message .= '<span class="reussite">Connexion réussie</span><br><br><a href="index.php">Retour à l\'accueil</a>';
-
-            $_SESSION['id'] = $identifiant;
-            $_SESSION['mdp'] = $motdepasse;
-        } else if ($retour == 2) {
-            $message .= '<span class="error">Le mot de passe ne correspond pas avec votre identifiant</span>';
-        } else {
-            $message .= '<span class="error">Echec de Connexion</span>';
+        if ($verif == 0) {
+            $messageretour .= '<span class="error">Echec de la connexion</span>';
         }
+    } else {
+        $messageretour = '';
     }
 
     include "header.php";
     include "menu.php";
-
-
-    /*
-
-    <form action="" method="POST">
-        <article style="margin-left:35%;text-align:center;">
-            <?= $message; ?>
-            Identifiant :<br><br>
-            <input type="text" id="identifiant" name="identifiant" placeholder="Entrez votre identifiant" /><br><br>
-
-            Mot de passe :<br><br>
-            <input type="text" id="mdp" name="mdp" placeholder="Entrez votre mot de passe" /><br><br>
-
-            <input type="submit" name="valider" value="Envoi des données" />
-        </article>
-    </form>*/ ?>
+    ?>
 
     <div class=" flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class=" space-y-8">
@@ -68,6 +52,7 @@ include "head.php";
             </div>
             <form class="space-y-6" action="" method="POST">
                 <?= $message; ?>
+                <?= $messageretour; ?>
                 <div class="rounded-md shadow-sm -space-y-px">
                     <div>
                         <input id="identifiant" name="identifiant" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-red-900  placeholder-red-900 text-red-900  rounded-t-md focus:outline-none focus:ring-red-900  focus:border-red-900 focus:z-10 sm:text-sm" placeholder="Identifiant">

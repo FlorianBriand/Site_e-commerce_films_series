@@ -18,6 +18,7 @@ $tab = $_SESSION['produits'][$_GET['cat']];
          if (isset($_POST["quantite" . $i])) {
             $_SESSION['produits'][$_GET['cat']][$i]['panier'] = $_SESSION['produits'][$_GET['cat']][$i]['panier'] + $_POST["quantite" . $i];
             $_SESSION['produits'][$_GET['cat']][$i]['stock'] = $_SESSION['produits'][$_GET['cat']][$i]['stock'] - $_POST["quantite" . $i];
+
             $compteur = $compteur + $_POST["quantite" . $i];
          }
       }
@@ -29,6 +30,7 @@ $tab = $_SESSION['produits'][$_GET['cat']];
 
 
    ?>
+
       <span class="panier">
          Vos <?= $compteur ?> articles ont bien été ajoutés.
          </br> </br><a href="panier.php">Voir le panier
