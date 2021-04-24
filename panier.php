@@ -13,7 +13,7 @@ include_once("head.php");
 
     ?>
 
-    <div class="flex flex-col items-center mt-20">
+    <div id="tableau" class="flex flex-col items-center mt-20">
         <div class="-my-2 sm:-mx-6 lg:-mx-8">
             <div class="py-2 inline-block sm:px-6 lg:px-8">
                 <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
@@ -38,41 +38,42 @@ include_once("head.php");
                         <tbody class="bg-white divide-y divide-gray-200">
                             <?php
                             for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
+                                for ($j = 0; $j < sizeof($_SESSION['produits'][$_SESSION['categories'][$i]]); $j++) {
+                                    $panier = $_SESSION['produits'][$_SESSION['categories'][$i]][$j]['panier'];
+                                    $prix = $_SESSION['produits'][$_SESSION['categories'][$i]][$j]['prix'];
+                                    $nom = $_SESSION['produits'][$_SESSION['categories'][$i]][$j]['nom'];
+                                    $picture = $_SESSION['produits'][$_SESSION['categories'][$i]][$j]['picture'];
 
-                                $tab = $_SESSION['produits'][$_SESSION['categories'][$i]];
-
-                                for ($j = 0; $j < sizeof($tab); $j++) {
-                                    if ($tab[$j]['panier'] > 0) {
+                                    if ($panier > 0) {
                                         $vide = 0;
-                                        $prixtt = $prixtt + $tab[$j]['prix'] * $tab[$j]['panier'];
-
+                                        $prixtt = $prixtt + $prix * $panier;
                             ?>
                                         <tr>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 h-10 w-10 ">
-                                                        <?= $tab[$j]['panier']; ?>
+                                                        <?= $panier; ?>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 ">
-                                                        <?= $tab[$j]['nom']; ?>
+                                                        <?= $nom; ?>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class=" ">
                                                 <div class="p-4">
                                                     <div class=" ">
-                                                        <img class="imgArticle w-32" src="img/<?= $tab[$j]['picture']; ?>" alt="" />
+                                                        <img class="imgArticle w-32" src="img/<?= $picture; ?>" alt="" />
                                                     </div>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 h-10 w-10 ">
-                                                        <?= $tab[$j]['panier'] * $tab[$j]['prix']; ?>
+                                                        <?= $panier * $prix; ?>
                                                     </div>
                                                 </div>
                                             </td>
@@ -96,6 +97,7 @@ include_once("head.php");
                         </tbody>
                     </table>
                 </div>
+                <input type="button" id="bStock" class=" mt-2 px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700" onclick="loadPanier()" value="Valider la commande" />
             </div>
         </div>
     </div>
@@ -104,7 +106,7 @@ include_once("head.php");
     <?php
     if ($vide == 1) {
     ?>
-        <span class=" error">
+        <span class="text-2xl ml-40 text-red-700">
             Le panier est vide
         </span>
     <?php
