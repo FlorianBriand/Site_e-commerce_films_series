@@ -55,9 +55,11 @@ if (isset($valider)) {
    include "menu.php";
    ?>
    <section>
-      <article class="mt-10 bg-red-900 p-5 rounded-3xl" style="margin-left:35%;text-align:center;height:auto;">
+      <article class="mt-10 bg-gradient-to-t from-red-800 via-red-800 to-black p-5 rounded-3xl" style="margin-left:35%;text-align:center;height:auto;">
          <form class="text-white " action="" method="POST">
-            <lengend class="">Formulaire de contact</legend>
+            <lengend class="">
+               <div class="text-3xl uppercase ">Formulaire de contact</div>
+               </legend>
                <br><br>
                <label for="Datecontact">Date du contact :</label>
                <input class="text-black rounded-md" type="date" id="date1" name="date1" placeholder="Entrez la date du contact" /><br>

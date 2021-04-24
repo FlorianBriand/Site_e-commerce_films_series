@@ -24,16 +24,16 @@ include "head.php";
                 if (($_POST["mdp"] == $bdd['mdp']) && ($_POST["identifiant"] == $bdd['nom'])) {
                     $_SESSION['id'] = $identifiant;
                     $_SESSION['mdp'] = $motdepasse;
-                    $messageretour .= '<span class="reussite">Connexion avec succès</span>';
+                    $messageretour .= '<span class="text-green-500 text-2xl">Connexion avec succès</span>';
                 } elseif (($_POST["mdp"] != $bdd['mdp']) && ($_POST["identifiant"] == $bdd['nom'])) {
-                    $messageretour .= '<span class="error">Mot de passe incorrect</span>';
+                    $messageretour .= '<span class="text-2xl ml-40 text-red-700">Mot de passe incorrect</span>';
                 } else {
-                    $messageretour .= '<span class="error">Echec de la connexion 2</span>';
+                    $messageretour .= '<span class="text-2xl ml-40 text-red-700">Echec de la connexion 2</span>';
                 }
             }
         }
         if ($verif == 0) {
-            $messageretour .= '<span class="error">Echec de la connexion</span>';
+            $messageretour .= '<span class="text-2xl ml-40 text-red-700">Echec de la connexion</span>';
         }
     } else {
         $messageretour = '';
