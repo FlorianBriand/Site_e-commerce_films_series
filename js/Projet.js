@@ -1,3 +1,15 @@
+function loadPanier() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("tableau").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", "stock.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send();
+}
+
 var binaire = 0;
 
 function afficheStock() {
