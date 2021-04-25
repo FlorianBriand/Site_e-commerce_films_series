@@ -1,6 +1,5 @@
 <?php
 include_once("bdd.php");
-//include "bdd.php";
 
 ////////////////////////////////////////////////////////////////
 //Définition des catégories
@@ -51,9 +50,5 @@ if (!isset($_SESSION['produits'])) {
         $_SESSION['produits'][$_SESSION['categories'][$i]] = $tab;
     }
 }
-
-
-
-
 
 deconnect(connect());

@@ -1,6 +1,6 @@
 <?php
 include_once("head.php");
-include_once("bdd.php");
+include_once("bdd/bdd.php");
 $connexion = connect();
 
 for ($i = 0; $i < sizeof($_SESSION['categories']); $i++) {
