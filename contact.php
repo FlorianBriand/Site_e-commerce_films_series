@@ -82,7 +82,7 @@ if (isset($valider)) {
                <br>
                <label for="datenaissance">Date de naissance :</label>
                <input class="text-black rounded-md" type="date" id="date2" name="date2" placeholder="Entrez votre date de naissance" />
-
+               <br>
                <span class="error" id="erreurdate2"><?= $messagedn ?></span><br />
                <br>
                <label for="sujet">Sujet :</label>
